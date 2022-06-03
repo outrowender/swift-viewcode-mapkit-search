@@ -13,9 +13,7 @@
 		2A7AD51B28495F04007896A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AD51928495F04007896A2 /* Main.storyboard */; };
 		2A7AD51D28495F05007896A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AD51C28495F05007896A2 /* Assets.xcassets */; };
 		2A7AD52028495F05007896A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AD51E28495F05007896A2 /* LaunchScreen.storyboard */; };
-		2A7AD52B28495F05007896A2 /* mapsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AD52A28495F05007896A2 /* mapsTestTests.swift */; };
-		2A7AD53528495F05007896A2 /* mapsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AD53428495F05007896A2 /* mapsTestUITests.swift */; };
-		2A7AD53728495F05007896A2 /* mapsTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AD53628495F05007896A2 /* mapsTestUITestsLaunchTests.swift */; };
+		2A7AD54428496CA3007896A2 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AD54328496CA3007896A2 /* CustomMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,8 @@
 		2A7AD51F28495F05007896A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7AD52128495F05007896A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A7AD52628495F05007896A2 /* mapsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A7AD52A28495F05007896A2 /* mapsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsTestTests.swift; sourceTree = "<group>"; };
 		2A7AD53028495F05007896A2 /* mapsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A7AD53428495F05007896A2 /* mapsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsTestUITests.swift; sourceTree = "<group>"; };
-		2A7AD53628495F05007896A2 /* mapsTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A7AD54328496CA3007896A2 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				2A7AD51228495F04007896A2 /* mapsTest */,
-				2A7AD52928495F05007896A2 /* mapsTestTests */,
-				2A7AD53328495F05007896A2 /* mapsTestUITests */,
 				2A7AD51128495F04007896A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,25 +100,9 @@
 				2A7AD51C28495F05007896A2 /* Assets.xcassets */,
 				2A7AD51E28495F05007896A2 /* LaunchScreen.storyboard */,
 				2A7AD52128495F05007896A2 /* Info.plist */,
+				2A7AD54328496CA3007896A2 /* CustomMapView.swift */,
 			);
 			path = mapsTest;
-			sourceTree = "<group>";
-		};
-		2A7AD52928495F05007896A2 /* mapsTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				2A7AD52A28495F05007896A2 /* mapsTestTests.swift */,
-			);
-			path = mapsTestTests;
-			sourceTree = "<group>";
-		};
-		2A7AD53328495F05007896A2 /* mapsTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2A7AD53428495F05007896A2 /* mapsTestUITests.swift */,
-				2A7AD53628495F05007896A2 /* mapsTestUITestsLaunchTests.swift */,
-			);
-			path = mapsTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +238,7 @@
 			files = (
 				2A7AD51828495F04007896A2 /* ViewController.swift in Sources */,
 				2A7AD51428495F04007896A2 /* AppDelegate.swift in Sources */,
+				2A7AD54428496CA3007896A2 /* CustomMapView.swift in Sources */,
 				2A7AD51628495F04007896A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7AD52B28495F05007896A2 /* mapsTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7AD53728495F05007896A2 /* mapsTestUITestsLaunchTests.swift in Sources */,
-				2A7AD53528495F05007896A2 /* mapsTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
